@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:paddingTop="40dp"
+    android:paddingBottom="45dp"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/logoIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/liberation_app_logo"
+            android:layout_marginEnd="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Liberation"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이용 약관"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F9F9F9"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="본 앱은 이용자의 개인정보를 최소한으로 처리하며, 보안 진단 완료 즉시 원본 데이터를 파기하는 것을 원칙으로 합니다."
+                android:textColor="#D32F2F"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="제1조 (개인정보의 처리 목적)"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="솔루션은 다음의 목적을 위하여 개인정보를 처리합니다. 처리하고 있는 개인정보는 다음의 목적 이외의 용도로는 이용되지 않으며, 이용 목적이 변경되는 경우에는 별도의 동의를 받는 등 필요한 조치를 이행할 예정입니다.\n보안 위협 탐지 및 대응: 업로드된 파일 및 URL의 악성코드 포함 여부, 피싱 사이트 여부 진단 등"
+                android:textSize="13sp"
+                android:lineSpacingExtra="3dp"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="제2조 (개인정보 처리 및 파기 요약)"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="솔루션은 법령에 따른 개인정보 보유·이용기간 또는 정보주체로부터 개인정보를 수집 시에 동의 받은 개인정보 보유·이용기간 내에서 개인정보를 처리·보유합니다.\n수집 항목\n• URL/파일 원본: 검사 완료 즉시 파기 (미저장)\n• 가명 데이터: 통계 분석 및 본인 이력 확인용 보관"
+                android:textSize="13sp"
+                android:lineSpacingExtra="3dp"
+                android:layout_marginBottom="12dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="[개인정보 처리 세부 항목]"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1,3"
+                android:background="#000000"> <TableRow android:background="#F2F2F2">
+                <TextView android:text="구분" android:padding="8dp" android:textStyle="bold" android:textSize="12sp" android:gravity="center"/>
+                <TextView android:text="항목" android:padding="8dp" android:textStyle="bold" android:textSize="12sp" android:gravity="center"/>
+                <TextView android:text="저장" android:padding="8dp" android:textStyle="bold" android:textSize="12sp" android:gravity="center"/>
+                <TextView android:text="파기 시점" android:padding="8dp" android:textStyle="bold" android:textSize="12sp" android:gravity="center"/>
+                <TextView android:text="저장 사유" android:padding="8dp" android:textStyle="bold" android:textSize="12sp" android:gravity="center"/>
+            </TableRow>
+
+                <TableRow android:background="#FFFFFF">
+                    <TextView android:text="개인식별\n위험 데이터" android:padding="8dp" android:textSize="11sp" android:gravity="center"/>
+                    <TextView android:text="URL 원문\n(Query 포함)" android:padding="8dp" android:textSize="11sp"/>
+                    <TextView android:text="X" android:padding="8dp" android:textSize="11sp" android:gravity="center" android:textColor="#D32F2F"/>
+                    <TextView android:text="검사 완료 후\n즉시 파기" android:padding="8dp" android:textSize="11sp"/>
+                    <TextView android:text="개인정보 유출 방지\n결합 가능성 차단" android:padding="8dp" android:textSize="11sp"/>
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF">
+                    <View android:layout_height="0dp"/> <TextView android:text="파일 원본\n(Binary)" android:padding="8dp" android:textSize="11sp"/>
+                    <TextView android:text="X" android:padding="8dp" android:textSize="11sp" android:gravity="center" android:textColor="#D32F2F"/>
+                    <TextView android:text="스캔 완료 후\n즉시 파기" android:padding="8dp" android:textSize="11sp"/>
+                    <TextView android:text="민감정보 노출 방지\n서버 보안 리스크 최소화" android:padding="8dp" android:textSize="11sp"/>
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF">
+                    <TextView android:text="비식별\n가명 데이터" android:padding="8dp" android:textSize="11sp" android:gravity="center"/>
+                    <TextView android:text="Final URL\nDisplay" android:padding="8dp" android:textSize="11sp"/>
+                    <TextView android:text="O" android:padding="8dp" android:textSize="11sp" android:gravity="center" android:textColor="#388E3C"/>
+                    <TextView android:text="최근 100건 유지\n후 자동 삭제" android:padding="8dp" android:textSize="11sp"/>
+                    <TextView android:text="사용자 본인의\n검사 이력 확인" android:padding="8dp" android:textSize="11sp"/>
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF">
+                    <View android:layout_height="0dp"/>
+                    <TextView android:text="URL\nFingerprint" android:padding="8dp" android:textSize="11sp"/>
+                    <TextView android:text="O" android:padding="8dp" android:textSize="11sp" android:gravity="center" android:textColor="#388E3C"/>
+                    <TextView android:text="서비스 종료 시\n까지 (통계용)" android:padding="8dp" android:textSize="11sp"/>
+                    <TextView android:text="위협 데이터 군집화\n통계 분석" android:padding="8dp" android:textSize="11sp"/>
+                </TableRow>
+                <TableRow android:background="#FFFFFF">
+                    <TextView android:text="시스템\n정보" android:padding="8dp" android:textSize="11sp" android:gravity="center"/>
+                    <TextView android:text="검사 일시 및 결과" android:padding="8dp" android:textSize="11sp"/>
+                    <TextView android:text="O" android:padding="8dp" android:textSize="11sp" android:gravity="center" android:textColor="#388E3C"/>
+                    <TextView android:text="서비스 이용기간\n내 보관" android:padding="8dp" android:textSize="11sp"/>
+                    <TextView android:text="보안 로그 관리\n침해 사고 대응 증적 자료" android:padding="8dp" android:textSize="11sp"/>
+                </TableRow>
+            </TableLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="제3조 (개인정보의 제3자 제공 및 위탁)"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="본 솔루션은 원칙적으로 이용자의 개인정보를 외부에 제공하거나 처리를 위탁하지 않습니다. 단, 법령의 규정에 의거하거나 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우에 한하여 제공합니다."
+                android:textSize="13sp"
+                android:lineSpacingExtra="3dp"
+                android:layout_marginBottom="12dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="제4조 (개인정보의 파기절차 및 파기방법)"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. 파기절차: 이용 목적이 달성된 정보(보안 진단이 완료된 원문 등)는 지체 없이 파기합니다.\n2. 파기방법: 전자적 파일 형태의 정보는 기록을 재생할 수 없는 기술적 방법(메모리 할당 해제 및 덮어쓰기 등)을 사용하여 삭제합니다."
+                android:textSize="13sp"
+                android:lineSpacingExtra="3dp"
+                android:layout_marginBottom="12dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="제5조 (가명정보의 처리 등에 관한 사항)"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="본 솔루션은 통계 작성 및 보안 엔진 고도화를 위하여 수집된 URL을 다음과 같이 가명 처리하여 관리합니다.\n1. 대상 항목: URL 주소.\n2. 가명처리 방법: 쿼리 스트링(Query String) 제거 후 SHA-256 일방향 해시 함수 적용.\n3. 가명정보의 안전성 확보조치: 재식별 방지를 위한 추가 정보의 분리 보관 및 접근 권한 제한."
+                android:textSize="13sp"
+                android:lineSpacingExtra="3dp"
+                android:layout_marginBottom="12dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="제6조 (개인정보를 자동으로 수집하는 장치의 설치·운영 및 거부)"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="본 솔루션은 이용자에게 개별적인 맞춤 서비스를 제공하기 위해 이용 정보를 저장하고 수시로 불러오는 ‘쿠키(cookie)’ 등을 사용하지 않습니다. (단, 분석을 위한 세션 로그는 발생할 수 있습니다.)"
+                android:textSize="13sp"
+                android:lineSpacingExtra="3dp"
+                android:layout_marginBottom="12dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="제7조 (개인정보 보호책임자)"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="성명: 고은결 (산업보안팀)\n연락처: 010-8638-4164 / rhdmsruf0916"
+                android:textSize="13sp"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnClosePolicy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:backgroundTint="#000000"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

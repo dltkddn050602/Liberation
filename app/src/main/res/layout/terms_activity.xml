@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:paddingTop="40dp"
+    android:paddingBottom="45dp"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. 개인정보 수집동의(필수)"
+                android:textColor="#FF0000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="보안 진단을 위한 데이터 처리 동의"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• 수집 목적: 실시간 악성 URL 탐지 및 업로드 파일 보안 스캔\n• 수집 항목: 접속 URL(쿼리 포함), 파일 원본 데이터, 가명화된 URL 지표\n• 보유 및 이용 기간: 진단 완료 즉시 파기 (원본 절대 미저장)"
+                android:lineSpacingExtra="4dp"
+                android:textSize="13sp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="end"
+                android:layout_marginTop="8dp">
+                <RadioButton android:id="@+id/agree1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="동의" />
+                <RadioButton android:id="@+id/disagree1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="비동의" />
+            </RadioGroup>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EEEEEE" android:layout_marginVertical="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. 기기 권한 및 시스템 허용(필수)"
+                android:textColor="#FF0000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="앱이 백그라운드에서 실시간으로 작동하기 위해 필요한 권한"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• 목적: 실시간 악성 URL 탐지 및 업로드 파일 보안 스캔\n• 항목: 접속 URL(쿼리 포함), 파일 원본 데이터(이상 일시적 처리), 가명화된 URL 지표(저장)\n• 보유 기간: 진단 완료 즉시 파기 (원본 절대 미저장)"
+                android:lineSpacingExtra="4dp"
+                android:textSize="13sp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="end"
+                android:layout_marginTop="8dp">
+                <RadioButton android:id="@+id/agree2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="동의" />
+                <RadioButton android:id="@+id/disagree2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="비동의" />
+            </RadioGroup>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EEEEEE" android:layout_marginVertical="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. 서비스 고도화 및 위협 정보 공유 동의(선택)"
+                android:textColor="#E57373"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="• 목적: 신종 피싱 패턴 분석 및 글로벌 위협 DB 업데이트 기여\n• 항목: 익명화된 탐지 결과 로그, 가명화된 URL 통계 데이터"
+                android:lineSpacingExtra="4dp"
+                android:textSize="13sp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="end"
+                android:layout_marginTop="8dp">
+                <RadioButton android:id="@+id/agree3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="동의" />
+                <RadioButton android:id="@+id/disagree3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="비동의" />
+            </RadioGroup>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Liberation은 고객의 개인정보를 최우선으로 보호합니다."
+        android:gravity="center"
+        android:textSize="12sp"
+        android:layout_marginVertical="16dp"
+        android:textColor="#757575"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="확인 및 시작하기"
+        android:backgroundTint="#777777"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
